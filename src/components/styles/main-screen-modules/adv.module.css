@@ -1,0 +1,62 @@
+.fgrid {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 32px; 
+    grid-template-areas: 
+        "fbig fsecbig"; 
+}
+
+.fbig {
+    max-width: 592px;
+    grid-area: fbig;
+    background-color: #F2F2F2;
+    aspect-ratio: 148 / 133;
+}
+
+.fsecbig {
+    max-width: 592px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 32px; 
+    grid-template-areas: 
+        "fmid fmid"
+        "fsm1 fsm2"; 
+    grid-area: fsecbig;
+    aspect-ratio: 148 / 133;
+}
+
+.fmid {
+    max-width: 592px;
+    grid-area: fmid;
+    background-color: #F2F2F2;
+    aspect-ratio: 296 / 125;
+}
+
+.fsm1 {
+    max-width: 280px;
+    background-color: #F2F2F2;
+    grid-area: fsm1;
+    aspect-ratio: 28 / 25;
+}
+.fsm2 {
+    max-width: 280px;
+    background-color: #F2F2F2;
+    grid-area: fsm2;
+    aspect-ratio: 28 / 25;
+}
+
+@media only screen and (max-width: 600px) {
+    .fgrid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fsecbig {
+        gap: 20px;
+    }
+}

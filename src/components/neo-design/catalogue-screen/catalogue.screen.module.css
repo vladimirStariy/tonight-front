@@ -1,0 +1,67 @@
+.catalogueContentFull {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background-color: blue;
+    gap: 32px;
+    height: 500px;
+}
+
+.catalogueFilterContainer {
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    height: 500px;
+}
+
+.catalogueProductContainer {
+    max-width: 904px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    height: 500px;
+}
+
+@media only screen and (max-width: 375px) {
+    .tonightContainer {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .tonightContainer {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 726px) {
+    .tonightContainer {
+        max-width: 694px;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    
+}
+
+@media only screen and (min-width: 936px) {
+    .tonightContainer {
+        max-width: 904px;
+    }
+
+}
+
+@media only screen and (min-width: 1248px) {
+    .tonightContainer {
+        max-width: 1216px;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
